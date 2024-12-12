@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "adventofcode2024"
+version = "0.1.0"
+description = ""
+authors = ["Morgan Kan <heraldk@gmail.com>"]
+readme = "README.md"
+
+[tool.ruff.lint]
+select = [
+    # Pyflakes
+    "F",
+    # Pycodestyle
+    "E",
+    "W",
+    # isort
+    "I001"
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+ruff = "^0.1.6"
+pytest = "^7.4.3"
+
+[tool.pytest.ini_options]
+pythonpath = "adventofcode2024"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
