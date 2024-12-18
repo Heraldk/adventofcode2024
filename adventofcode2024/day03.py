@@ -20,12 +20,12 @@ def eval_mul(input: str) -> int:
 
 class Day03(AdventSolution):
     @classmethod
-    def part_one(self, input_file: str):
+    def part_one(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             vals = [eval_mul(x) for x in find_muls("".join(file.readlines()))]
             print(sum(vals))
 
-    def part_two(self, input_file: str):
+    def part_two(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             do_on = True
             total = 0

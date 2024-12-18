@@ -29,7 +29,7 @@ def find_operators(
 
 class Day07(AdventSolution):
     @classmethod
-    def part_one(self, input_file: str):
+    def part_one(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             params = read_input(file.readlines())
             total = 0
@@ -38,7 +38,7 @@ class Day07(AdventSolution):
                     total += target
             print(total)
 
-    def part_two(self, input_file: str):
+    def part_two(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             params = read_input(file.readlines())
             total = 0

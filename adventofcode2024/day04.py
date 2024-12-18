@@ -99,11 +99,11 @@ def find_cross_mases(input: list[str]) -> int:
 
 class Day04(AdventSolution):
     @classmethod
-    def part_one(self, input_file: str):
+    def part_one(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             print(find_xmases(file.readlines()))
 
-    def part_two(self, input_file: str):
+    def part_two(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             print(find_cross_mases(file.readlines()))
 

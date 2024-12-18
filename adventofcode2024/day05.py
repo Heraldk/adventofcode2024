@@ -54,7 +54,7 @@ def fix_page(constraints: list[Constraint], page: list[int]) -> list[int]:
 
 class Day05(AdventSolution):
     @classmethod
-    def part_one(self, input_file: str):
+    def part_one(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             total = 0
             constraints, pages = read_input(file.readlines())
@@ -63,7 +63,7 @@ class Day05(AdventSolution):
                     total += page[len(page) // 2]
             print(total)
 
-    def part_two(self, input_file: str):
+    def part_two(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             total = 0
             constraints, pages = read_input(file.readlines())

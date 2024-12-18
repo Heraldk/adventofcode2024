@@ -51,7 +51,7 @@ def run_sequence_memoize(
 
 class Day11(AdventSolution):
     @classmethod
-    def part_one(self, input_file: str):
+    def part_one(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             print(
                 run_sequence_naive(
@@ -59,7 +59,7 @@ class Day11(AdventSolution):
                 )
             )
 
-    def part_two(self, input_file: str):
+    def part_two(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             total_length = 0
             memory = {}

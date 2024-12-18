@@ -53,12 +53,12 @@ def count_trail_scores(map: dict[Coord, int]) -> tuple[int, int]:
 
 class Day10(AdventSolution):
     @classmethod
-    def part_one(self, input_file: str):
+    def part_one(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             map = parse_map(file.readlines())
             print(count_trail_scores(map)[0])
 
-    def part_two(self, input_file: str):
+    def part_two(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             map = parse_map(file.readlines())
             print(count_trail_scores(map)[1])

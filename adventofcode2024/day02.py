@@ -23,7 +23,7 @@ def is_safe_with_dampener(level: list[int]) -> bool:
 
 class Day02(AdventSolution):
     @classmethod
-    def part_one(self, input_file: str):
+    def part_one(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             safe_count = 0
             for line in file.readlines():
@@ -31,7 +31,7 @@ class Day02(AdventSolution):
                 safe_count += 1 if is_safe(level) else 0
             print(safe_count)
 
-    def part_two(self, input_file: str):
+    def part_two(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             safe_count = 0
             for line in file.readlines():

@@ -33,7 +33,7 @@ instance = DayClass()
 # Part One
 part_one_filename = f"{filename}.txt"
 if args.skip != 1:
-    instance.part_one(part_one_filename)
+    instance.part_one(part_one_filename, test_mode=args.test)
 
 # Part Two
 if os.path.isfile(f"{filename}_part2.txt"):
@@ -41,4 +41,4 @@ if os.path.isfile(f"{filename}_part2.txt"):
 else:
     part_two_filename = part_one_filename
 if args.skip != 2:
-    instance.part_two(part_two_filename)
+    instance.part_two(part_two_filename, test_mode=args.test)

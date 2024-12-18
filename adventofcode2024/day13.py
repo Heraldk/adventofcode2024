@@ -70,7 +70,7 @@ def solve_equation(machine: MachineConfig) -> tuple[int, int] | None:
 
 class Day13(AdventSolution):
     @classmethod
-    def part_one(self, input_file: str):
+    def part_one(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             input = read_input(file.readlines())
             tokens = 0
@@ -80,7 +80,7 @@ class Day13(AdventSolution):
                     tokens += solve[0] * 3 + solve[1]
             print(tokens)
 
-    def part_two(self, input_file: str):
+    def part_two(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             input = read_input(file.readlines(), offset=10000000000000)
             tokens = 0

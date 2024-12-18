@@ -60,12 +60,12 @@ def find_antinodes_part_two(map: dict[str, list[Coord]], max_dim: Coord) -> int:
 
 class Day08(AdventSolution):
     @classmethod
-    def part_one(self, input_file: str):
+    def part_one(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             map, max_dim = parse_input(file.readlines())
             print(find_antinodes(map, max_dim))
 
-    def part_two(self, input_file: str):
+    def part_two(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             map, max_dim = parse_input(file.readlines())
             print(find_antinodes_part_two(map, max_dim))

@@ -107,13 +107,13 @@ def compress_contiguous(memory: list[int]) -> int:
 
 class Day09(AdventSolution):
     @classmethod
-    def part_one(self, input_file: str):
+    def part_one(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             spaces, memory = unpack_map(file.readline())
             memory = compress(spaces, memory)
             print(calc_checksum(memory))
 
-    def part_two(self, input_file: str):
+    def part_two(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             spaces, memory = unpack_map(file.readline())
             memory = compress_contiguous(memory)

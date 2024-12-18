@@ -88,12 +88,12 @@ def walk_the_map_detect_loops(
 
 class Day06(AdventSolution):
     @classmethod
-    def part_one(self, input_file: str):
+    def part_one(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             map, starting_loc, max_x, max_y = read_map(file.readlines())
             print(walk_the_map(map, starting_loc, max_x, max_y))
 
-    def part_two(self, input_file: str):
+    def part_two(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             map, starting_loc, max_x, max_y = read_map(file.readlines())
             results = []

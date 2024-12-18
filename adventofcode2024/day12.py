@@ -140,13 +140,13 @@ def merge_fences(fences: list[list[tuple[Coord, Coord, Coord]]]) -> list[list[Se
 
 class Day12(AdventSolution):
     @classmethod
-    def part_one(self, input_file: str):
+    def part_one(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             map = parse_map(file.readlines())
             areas, fences = find_areas_and_perims(map)
             print(calc_price(areas, fences))
 
-    def part_two(self, input_file: str):
+    def part_two(self, input_file: str, **kwargs):
         with open(input_file, "r") as file:
             map = parse_map(file.readlines())
             areas, fences = find_areas_and_perims(map)
