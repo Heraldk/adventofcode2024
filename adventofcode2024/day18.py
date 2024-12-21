@@ -2,7 +2,6 @@ from dataclasses import dataclass, field
 from queue import PriorityQueue
 
 from common import AdventSolution
-from tqdm import tqdm
 
 
 @dataclass(frozen=True)
